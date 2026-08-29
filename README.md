@@ -41,3 +41,18 @@ SELECT
         2
     ) AS churned_monthly_revenue_lost
 FROM telco_customer_churn;
+```
+---
+
+## 📊 Tableau Public Interactive Dashboard
+
+An interactive dashboard was built using **Tableau Public** to enable stakeholders to explore key churn risk drivers, drill down into customer cohorts, and isolate specific high-risk service profiles in real time.
+
+* **Live Dashboard:** [Telco Customer Churn & Retention Executive Dashboard](https://public.tableau.com/views/telco_churn_dashboard_17879729789630/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+
+### Key Features & Design Architecture
+* **Executive Summary Panel:** Instant visibility into overall business performance metrics, including **Total Revenue ($16.06M)** and baseline dataset churn rate.
+* **Contract Risk Breakdown:** Visualizes customer concentration across contract types, highlighting **Month-to-month contracts** as the primary driver of churn (**42.71%**).
+* **Tenure Cohort Analysis:** Identifies customer lifecycle drop-off patterns, demonstrating that **47.44%** of churned users leave within their first year of service.
+* **Service Risk Matrix:** Maps the intersection of Internet Service and Tech Support, isolating **Fiber Optic customers without Tech Support** as the highest-risk segment (**49.37%** churn).
+* **Cross-Filtering & Interactivity:** Built-in filter actions and hover highlights allow dynamic drill-down across all four views upon selecting any contract, tenure cohort, or service combination.
